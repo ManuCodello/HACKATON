@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mi app de tareas</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100">
+        <header class="bg-lime-950 p-4 text-white">
+            <nav class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-lg font-bold">To-Do App</a>
+            <ul class="flex space-x-4">
+                <li>
+                <a href="#" class="hover:text-blue-500">Mis Tareas</a>
+                </li>
+                <li>
+                <a href="#" class="hover:text-blue-500">Sobre Nosotros</a>
+                </li>
+            </ul>
+            </nav>
+        </header>
+        <div class="bg-white p-6 rounded shadow mb-6">
+            <h2 class="text-xl font-bold mb-4">Agregar ingredientes</h2>
+            <form id="ingredientes-form">
+              <table class="w-full table-auto mb-4" id="tabla-ingredientes">
+                <thead class="bg-gray-200">
+                    <tr>
+                      <th class="p-2">Ingrediente</th>
+                      <th class="p-2">Cantidad</th>
+                      <th class="p-2">Tipo</th>
+                      <th class="p-2">Vencimiento</th>
+                      <th class="p-2">Acción</th>
+                    </tr>
+                  </thead>
+                <tbody id="tabla-body">
+                  <!-- Filas dinámicas -->
+                </tbody>
+              </table>
+          
+              <button type="button" onclick="agregarFila()" class="bg-lime-700 text-white px-4 py-2 rounded hover:bg-lime-800 mb-4">
+                [+] Agregar ingrediente
+              </button>
+          
+                <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">
+                  Enviar ingredientes
+                </button>
+            </form>
+
+            <ul class="space-y-4">
+                {% for ingrediente in ingredientes %}
+                <li class="bg-white p-4 rounded shadow flex justify-between items-center">
+                  <div class="flex items-center space-x-4">
+                    <form action="/consumir-ingrediente/{{ ingrediente.id }}" method="post">
+                      <input type="checkbox" class="accent-lime-700 w-5 h-5" onchange="this.form.submit()" {% if ingrediente.consumido %} checked {% endif %} />
+                    </form>
+                    <span class="{% if ingrediente.consumido %} line-through text-gray-400 {% endif %} text-lg font-medium">
+                      {{ ingrediente.ingrediente }} = {{ ingrediente.cantidad }}
+                    </span>
+                  </div>
+              
+                  <div class="flex space-x-2">
+                    <a href="#" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 hover:font-semibold transition">
+                      Editar
+                    </a>
+                    <form action="/eliminar-ingrediente/{{ ingrediente.id }}" method="post">
+                      <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 hover:font-semibold transition">
+                        Eliminar
+                      </button>
+                    </form>
+                  </div>
+                </li>
+                {% else %}
+                <li class="text-gray-500">No hay ingredientes.</li>
+                {% endfor %}
+              </ul>
+
+          </div>
+          
+          <script>
+            function agregarFila() {
+              const tbody = document.getElementById("tabla-body");
+              const row = document.createElement("tr");
+          
+              row.innerHTML = `
+                <td class="p-2"><input type="text" name="ingrediente[]" 
+                    class="p-2 border rounded w-full" required></td>
+                <td class="p-2"><input type="number" name="cantidad[]" 
+                    class="p-2 border rounded w-full" required></td>
+                <td class="p-2">
+
+                  <select name="tipo[]" class="p-2 border rounded w-full" onchange="toggleFecha(this)">
+                    <option value="natural">Natural</option>
+                    <option value="industrial">Industrial</option>
+                  </select>
+                </td>
+                <td class="p-2">
+                  <input type="date" name="vencimiento[]" class="p-2 border rounded w-full" disabled>
+                </td>
+                <td class="p-2">
+                  <button type="button" onclick="eliminarFila(this)" class="text-red-500 hover:font-bold">Eliminar</button>
+                </td>
+              `;
+          
+              tbody.appendChild(row);
+            }
+          
+            function toggleFecha(selectElement) {
+            const vencimientoInput = selectElement.closest("tr").querySelector('input[name="vencimiento[]"]');
+            vencimientoInput.disabled = (selectElement.value !== "industrial");
+            }
+
+            document.getElementById("ingredientes-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const filas = document.querySelectorAll("#tabla-body tr");
+            const ingredientes = [];
+
+            filas.forEach(fila => {
+                const ingrediente = fila.querySelector('input[name="ingrediente[]"]').value;
+                const cantidad = parseInt(fila.querySelector('input[name="cantidad[]"]').value);
+                const tipo = fila.querySelector('select[name="tipo[]"]').value;
+                const vencimiento = fila.querySelector('input[name="vencimiento[]"]').value || null;
+
+                ingredientes.push({ ingrediente, cantidad, tipo, vencimiento });
+            });
+
+            fetch("/agregar-ingredientes", {
+                method: "POST",
+                headers: {
+                "Content-Type": "application/json"
+                },
+                body: JSON.stringify(ingredientes)
+            }).then(res => {
+                if (res.ok) {
+                alert("Ingredientes agregados correctamente");
+                location.reload();
+                } else {
+                alert("Hubo un error al guardar los ingredientes.");
+                }
+            });
+            });
+          </script>
+          
+    </body>
+</html>
