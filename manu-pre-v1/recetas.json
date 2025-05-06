@@ -1,0 +1,52 @@
+[
+    {
+    "nombre": "Arroz con leche",
+    "ingredientes": "leche, arroz, azúcar, canela",
+    "instrucciones": "Hervir la leche, agregar arroz y azúcar, cocinar hasta espesar."
+    },
+    {
+    "nombre": "Tortilla de papa",
+    "ingredientes": "papa, huevo, cebolla, aceite",
+    "instrucciones": "Freír la papa y cebolla, agregar huevo batido, cocinar en sartén."
+},
+    {
+    "nombre": "Ensalada de arroz",
+    "ingredientes": "arroz, atún, mayonesa, arvejas, zanahoria",
+    "instrucciones": "Mezclar arroz cocido con los demás ingredientes."
+},
+    {
+    "nombre": "Pollo al horno con papas",
+    "ingredientes": "pollo, papas, cebolla, ajo, aceite de oliva, hierbas provenzales",
+    "instrucciones": "Marinar el pollo con aceite, hierbas y ajo. Cortar las papas y cebolla. Hornear todo junto hasta que el pollo esté dorado y las papas tiernas."
+    },
+    {
+    "nombre": "Pasta con salsa de tomate",
+    "ingredientes": "pasta, tomate, cebolla, ajo, aceite de oliva, albahaca",
+    "instrucciones": "Cocinar la pasta según las instrucciones. Sofreír cebolla y ajo, agregar tomate y albahaca. Mezclar la salsa con la pasta."
+    },
+    {
+    "nombre": "Sopa de verduras",
+    "ingredientes": "zanahoria, cebolla, apio, caldo de verduras, fideos, perejil",
+    "instrucciones": "Cortar las verduras y sofreírlas. Agregar el caldo y los fideos. Cocinar hasta que las verduras estén tiernas. Servir con perejil picado."
+    },
+    {
+    "nombre": "Tostadas de aguacate",
+    "ingredientes": "pan, aguacate, limón, sal, pimienta",
+    "instrucciones": "Tostar el pan. Machacar el aguacate y mezclar con limón, sal y pimienta. Untar sobre el pan."
+},
+    {
+    "nombre": "Huevos revueltos",
+    "ingredientes": "huevos, leche, sal, pimienta, manteca",
+    "instrucciones": "Batir los huevos con leche, sal y pimienta. Derretir la manteca en una sartén y cocinar los huevos revolviendo constantemente."
+},
+    {
+    "nombre": "Lentejas estofadas",
+    "ingredientes": "lentejas, cebolla, zanahoria, pimiento, tomate, caldo de verduras, laurel",
+    "instrucciones": "Remojar las lentejas. Sofreír las verduras, agregar las lentejas y el caldo. Cocinar a fuego lento con laurel hasta que las lentejas estén tiernas."
+    },
+    {
+    "nombre": "Batido de frutas",
+    "ingredientes": "plátano, fresas, leche, miel",
+    "instrucciones": "Licuar todos los ingredientes hasta obtener una mezcla homogénea."
+    }
+]
