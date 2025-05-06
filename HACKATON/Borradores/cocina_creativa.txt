@@ -1,0 +1,3 @@
+Paso 1 conectar la api con un codigo y comprobar y comprender el funcionamiento
+
+gpt 3.5
