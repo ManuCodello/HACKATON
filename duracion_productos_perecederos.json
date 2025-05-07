@@ -1,0 +1,482 @@
+[
+    {
+        "producto": "BANANA",
+        "dias_fresco": {
+            "min": 3,
+            "max": 5
+        },
+        "dias_en_camara": {
+            "min": 7,
+            "max": 10
+        },
+        "dias_ambiente": {
+            "min": 1,
+            "max": 3
+        }
+    },
+    {
+        "producto": "MANZANA",
+        "dias_fresco": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_en_camara": {
+            "min": 30,
+            "max": 90
+        },
+        "dias_ambiente": {
+            "min": 7,
+            "max": 7
+        }
+    },
+    {
+        "producto": "NARANJA",
+        "dias_fresco": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 28
+        },
+        "dias_ambiente": {
+            "min": 7,
+            "max": 7
+        }
+    },
+    {
+        "producto": "PERA",
+        "dias_fresco": {
+            "min": 3,
+            "max": 7
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 28
+        },
+        "dias_ambiente": {
+            "min": 2,
+            "max": 5
+        }
+    },
+    {
+        "producto": "PIÑA",
+        "dias_fresco": {
+            "min": 5,
+            "max": 7
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 21
+        },
+        "dias_ambiente": {
+            "min": 2,
+            "max": 4
+        }
+    },
+    {
+        "producto": "SANDIA ENTERA",
+        "dias_fresco": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 21
+        },
+        "dias_ambiente": {
+            "min": 3,
+            "max": 5
+        }
+    },
+    {
+        "producto": "SANDIA CORTADA",
+        "dias_fresco": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 21
+        },
+        "dias_ambiente": {
+            "min": 1,
+            "max": 2
+        }
+    },
+    {
+        "producto": "MENTA",
+        "dias_fresco": {
+            "min": 3,
+            "max": 5
+        },
+        "dias_en_camara": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_ambiente": {
+            "min": 1,
+            "max": 2
+        }
+    },
+    {
+        "producto": "ACELGA",
+        "dias_fresco": {
+            "min": 3,
+            "max": 5
+        },
+        "dias_en_camara": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_ambiente": {
+            "min": 1,
+            "max": 2
+        }
+    },
+    {
+        "producto": "APIO",
+        "dias_fresco": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 28
+        },
+        "dias_ambiente": {
+            "min": 3,
+            "max": 5
+        }
+    },
+    {
+        "producto": "ALBAHACA",
+        "dias_fresco": {
+            "min": 3,
+            "max": 5
+        },
+        "dias_en_camara": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_ambiente": {
+            "min": 1,
+            "max": 2
+        }
+    },
+    {
+        "producto": "CEBOLLITA DE VERDEO",
+        "dias_fresco": {
+            "min": 7,
+            "max": 7
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 21
+        },
+        "dias_ambiente": {
+            "min": 3,
+            "max": 5
+        }
+    },
+    {
+        "producto": "ESPINACA BLANCA",
+        "dias_fresco": {
+            "min": 3,
+            "max": 5
+        },
+        "dias_en_camara": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_ambiente": {
+            "min": 1,
+            "max": 2
+        }
+    },
+    {
+        "producto": "KURATU",
+        "dias_fresco": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 28
+        },
+        "dias_ambiente": {
+            "min": 3,
+            "max": 5
+        }
+    },
+    {
+        "producto": "LECHUGA PIRATI",
+        "dias_fresco": {
+            "min": 7,
+            "max": 7
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 21
+        },
+        "dias_ambiente": {
+            "min": 2,
+            "max": 4
+        }
+    },
+    {
+        "producto": "LECHUGA REPOLLADA",
+        "dias_fresco": {
+            "min": 14,
+            "max": 21
+        },
+        "dias_en_camara": {
+            "min": 30,
+            "max": 60
+        },
+        "dias_ambiente": {
+            "min": 7,
+            "max": 7
+        }
+    },
+    {
+        "producto": "LECHUGA VERDE PIRATI HIDROPÓNICA",
+        "dias_fresco": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 28
+        },
+        "dias_ambiente": {
+            "min": 3,
+            "max": 5
+        }
+    },
+    {
+        "producto": "PEREJIL",
+        "dias_fresco": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 28
+        },
+        "dias_ambiente": {
+            "min": 3,
+            "max": 5
+        }
+    },
+    {
+        "producto": "RUCULA",
+        "dias_fresco": {
+            "min": 3,
+            "max": 5
+        },
+        "dias_en_camara": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_ambiente": {
+            "min": 1,
+            "max": 2
+        }
+    },
+    {
+        "producto": "BATATA ROJA",
+        "dias_fresco": {
+            "min": 14,
+            "max": 28
+        },
+        "dias_en_camara": {
+            "min": 30,
+            "max": 60
+        },
+        "dias_ambiente": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    {
+        "producto": "LIMON TAHITI",
+        "dias_fresco": {
+            "min": 14,
+            "max": 21
+        },
+        "dias_en_camara": {
+            "min": 30,
+            "max": 60
+        },
+        "dias_ambiente": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    {
+        "producto": "CEBOLLA BLANCA",
+        "dias_fresco": {
+            "min": 14,
+            "max": 28
+        },
+        "dias_en_camara": {
+            "min": 30,
+            "max": 60
+        },
+        "dias_ambiente": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    {
+        "producto": "LOCOTE VERDE",
+        "dias_fresco": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 21
+        },
+        "dias_ambiente": {
+            "min": 3,
+            "max": 5
+        }
+    },
+    {
+        "producto": "MANDIOCA",
+        "dias_fresco": {
+            "min": 7,
+            "max": 14
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 28
+        },
+        "dias_ambiente": {
+            "min": 3,
+            "max": 7
+        }
+    },
+    {
+        "producto": "PAPA NEGRA CEPILLADA",
+        "dias_fresco": {
+            "min": 14,
+            "max": 28
+        },
+        "dias_en_camara": {
+            "min": 30,
+            "max": 90
+        },
+        "dias_ambiente": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    {
+        "producto": "PEPINO",
+        "dias_fresco": {
+            "min": 7,
+            "max": 7
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 21
+        },
+        "dias_ambiente": {
+            "min": 3,
+            "max": 5
+        }
+    },
+    {
+        "producto": "REPOLLO BLANCO",
+        "dias_fresco": {
+            "min": 14,
+            "max": 28
+        },
+        "dias_en_camara": {
+            "min": 30,
+            "max": 60
+        },
+        "dias_ambiente": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    {
+        "producto": "TOMATE PERITA",
+        "dias_fresco": {
+            "min": 7,
+            "max": 7
+        },
+        "dias_en_camara": {
+            "min": 14,
+            "max": 21
+        },
+        "dias_ambiente": {
+            "min": 3,
+            "max": 5
+        }
+    },
+    {
+        "producto": "ZANAHORIA",
+        "dias_fresco": {
+            "min": 14,
+            "max": 21
+        },
+        "dias_en_camara": {
+            "min": 60,
+            "max": 90
+        },
+        "dias_ambiente": {
+            "min": 7,
+            "max": 14
+        }
+    },
+    {
+        "producto": "FRUTILLA",
+        "dias_fresco": {
+            "min": null,
+            "max": null
+        },
+        "dias_en_camara": {
+            "min": 4,
+            "max": 7
+        },
+        "dias_ambiente": {
+            "min": 240,
+            "max": 360
+        }
+    },
+    {
+        "producto": "ZAPALLO ENTERO",
+        "dias_fresco": {
+            "min": 60,
+            "max": 90
+        },
+        "dias_en_camara": {
+            "min": 28,
+            "max": 35
+        },
+        "dias_ambiente": {
+            "min": 180,
+            "max": 180
+        }
+    },
+    {
+        "producto": "ZAPALLO CORTADO",
+        "dias_fresco": {
+            "min": 1,
+            "max": 2
+        },
+        "dias_en_camara": {
+            "min": 4,
+            "max": 5
+        },
+        "dias_ambiente": {
+            "min": 180,
+            "max": 180
+        }
+    }
+]
