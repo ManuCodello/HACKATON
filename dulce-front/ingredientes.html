@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingredientes - KARU AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-image: url("BGKARU.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center">
+
+  <!-- Header con logo y navegación -->
+  <header class="bg-orange-100 w-full shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <img src="KaruAI_head.png" alt="Karu IA" class="h-16 w-auto" />
+        <h1 class="text-2xl font-bold text-black">Karu IA</h1>
+      </div>
+      <nav class="flex gap-6 text-black font-semibold">
+        <a href="ingredientes.html" class="hover:text-[#6C3FB4] transition">Ingredientes</a>
+        <a href="recetas.html" class="hover:text-[#6C3FB4] transition">Recetas</a>
+        <a href="comidas.html" class="hover:text-[#6C3FB4] transition">Comidas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="bg-[#f9f5ffcc] p-8 rounded-lg shadow-lg w-full max-w-4xl mt-10 mx-4">
+    <h2 class="text-3xl font-bold text-center text-[#6C3FB4] mb-6">Agregar Ingredientes</h2>
+
+    <!-- Botones -->
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mb-6">
+      <button onclick="agregarIngrediente()" class="bg-[#6C3FB4] hover:bg-[#5a5a9f] text-white font-semibold px-4 py-2 rounded transition">
+        [+] Agregar ingrediente
+      </button>
+      <button onclick="enviarIngredientes()" class="bg-[#6C3FB4] hover:bg-[#5a5a9f] text-white font-semibold px-4 py-2 rounded transition">
+        Enviar ingredientes
+      </button>
+    </div>
+
+    <!-- Tabla de ingredientes -->
+    <div class="overflow-x-auto">
+      <table class="min-w-full table-auto border border-gray-200 shadow-md bg-white rounded-lg overflow-hidden">
+        <thead class="bg-[#E0D4F7] text-black">
+          <tr>
+            <th class="p-3 text-left border">Ingrediente</th>
+            <th class="p-3 text-left border">Cantidad</th>
+            <th class="p-3 text-left border">Tipo</th>
+            <th class="p-3 text-left border">Vencimiento</th>
+            <th class="p-3 text-left border">Acción</th>
+          </tr>
+        </thead>
+        <tbody id="tablaIngredientes">
+          <tr class="even:bg-gray-100 odd:bg-white">
+            <td class="border px-3 py-2"><input type="text" class="w-full bg-transparent outline-none" placeholder="Ej: Tomate" /></td>
+            <td class="border px-3 py-2"><input type="number" class="w-full bg-transparent outline-none" placeholder="Ej: 2" min="1" /></td>
+            <td class="border px-3 py-2"><input type="text" class="w-full bg-transparent outline-none" placeholder="Ej: Vegetal" /></td>
+            <td class="border px-3 py-2"><input type="date" class="w-full bg-transparent outline-none" /></td>
+            <td class="border px-3 py-2 flex gap-2">
+              <button onclick="eliminarIngrediente(this)" class="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Script de funcionalidad ????-->
+  <script>
+    function agregarIngrediente() {
+      const tabla = document.getElementById('tablaIngredientes');
+      const fila = document.createElement('tr');
+      fila.className = 'even:bg-gray-100 odd:bg-white';
+      fila.innerHTML = `
+        <td class="border px-3 py-2"><input type="text" class="w-full bg-transparent outline-none" placeholder="Ej: Zanahoria" /></td>
+        <td class="border px-3 py-2"><input type="number" class="w-full bg-transparent outline-none" placeholder="Ej: 5" min="1" /></td>
+        <td class="border px-3 py-2"><input type="text" class="w-full bg-transparent outline-none" placeholder="Ej: Vegetal" /></td>
+        <td class="border px-3 py-2"><input type="date" class="w-full bg-transparent outline-none" /></td>
+        <td class="border px-3 py-2 flex gap-2">
+          <button onclick="eliminarIngrediente(this)" class="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded">Eliminar</button>
+        </td>
+      `;
+      tabla.appendChild(fila);
+    }
+
+    function eliminarIngrediente(boton) {
+      const fila = boton.closest('tr');
+      fila.remove();
+    }
+
+    function enviarIngredientes() {
+      alert("Función para enviar ingredientes aún no implementada.");
+    }
+  </script>
+
+</body>
+</html>
+
