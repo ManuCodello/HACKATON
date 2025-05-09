@@ -13,7 +13,7 @@ La propuesta de Karu IA es la de facilitar al usuario la gestión de su inventar
 ---
 
 ### **Inteligencia Artificial**
-- **Integración Magic Loops
+- Integración Magic Loops
 ### **Desarrollo Web**  
 - **Frontend**: HTML + Tailwind CSS + Jinja2 + JS
 - **Backend**: Python (Flask)  
